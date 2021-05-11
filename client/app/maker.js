@@ -37,6 +37,27 @@ const handleDelete = (e) => {
   return false;
 };
 
+const handleUpdate = (e) => {
+  e.preventDefault();
+
+  $("#serverMessage").animate({width:'hide'},350);
+
+  if($("#pass").val() == '' || $("#newPass").val() == '' || $("#newPass2").val() == '') {
+      handleError("All fields are required.");
+      return false;
+  }
+
+  if($("#newPass").val() !== $("#newPass2").val()) {
+      handleError("Passwords do not match.");
+      return false;
+  }
+
+  sendAjax('POST', $("#updateForm").attr("action"), $("#updateForm").serialize(), redirect);
+
+  return false;
+}
+
+
 const NpcForm = (props) => {
     return (
        <form id="npcForm"
