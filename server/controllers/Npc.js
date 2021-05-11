@@ -17,8 +17,10 @@ const {
 
 
 const makeNpc = (req, res) => {
-    if (!req.body.name || !req.body.sex || !req.body.career || !req.body.race || !req.body.personality ||
-         !req.body.blood || !req.body.mana || !req.body.strength || !req.body.spellpower || !req.body.speed) {
+    if (!req.body.name || !req.body.sex || !req.body.career 
+        || !req.body.race || !req.body.personality ||
+         !req.body.blood || !req.body.mana || 
+         !req.body.strength || !req.body.spellpower || !req.body.speed) {
         const npcData = {
             name: npcName[Math.floor(Math.random() * npcName.length)],
             sex: npcSex[Math.floor(Math.random() * npcSex.length)],
