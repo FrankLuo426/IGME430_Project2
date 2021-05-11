@@ -8,7 +8,6 @@ const router = (app) => {
     app.get('/getToken', mid.requiresSecure, controllers.Account.getToken);
     app.get('/getNpcs', mid.requiresLogin, controllers.Npc.getNpcs);
     app.get('/login', mid.requiresSecure, mid.requiresLogout, controllers.Account.loginPage);
-    // app.post('/changepassword', mid.requiresSecure, mid.requiresLogout, controllers.Account.changepassword);
     app.post('/login', mid.requiresSecure, mid.requiresLogout, controllers.Account.login);
     // app.get('/signup', mid.requiresSecure, mid.requiresLogout, controllers.Account.signupPage);
     app.post('/signup', mid.requiresSecure, mid.requiresLogout, controllers.Account.signup);

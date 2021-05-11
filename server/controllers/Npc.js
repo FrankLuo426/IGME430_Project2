@@ -17,7 +17,7 @@ const {
 
 
 const makeNpc = (req, res) => {
-    if (!req.body.name || !req.body.sex || !req.body.career || !!req.body.race || !req.body.personality || !req.body.blood ||!req.body.mana || !req.body.strength || !req.body.spellpower || !req.body.speed) {
+    if (!req.body.name || !req.body.sex || !req.body.career || !req.body.race || !req.body.personality || !req.body.blood || !req.body.mana || !req.body.strength || !req.body.spellpower || !req.body.speed) {
         const npcData = {
             name: npcName[Math.floor(Math.random() * npcName.length)],
             sex: npcSex[Math.floor(Math.random() * npcSex.length)],
@@ -31,6 +31,7 @@ const makeNpc = (req, res) => {
             speed: Math.floor(Math.random() * 100),
             owner: req.session.account._id,
         };
+        console.log("empty");
         const newNpc = new Npc.NpcModel(npcData);
         const npcPromise = newNpc.save();
         npcPromise.then(() => res.json({
@@ -62,6 +63,7 @@ const makeNpc = (req, res) => {
         speed: req.body.speed,
         owner: req.session.account._id,
     };
+    console.log("OK");
     const newNpc = new Npc.NpcModel(npcData);
     const npcPromise = newNpc.save();
     npcPromise.then(() => res.json({
