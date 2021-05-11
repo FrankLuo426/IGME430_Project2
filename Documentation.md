@@ -1,0 +1,12 @@
+What your site does and what its purpose is.
+This site is used for some game workers to build random NPC characters or add some NPCs they like, they can add their favorite or create random characters and save them on the site so they can view them when they log in again.
+How are you using React? What is it being used to show?
+When I uploaded the NPC list and NPC table using react, I used this feature to generate bundle js and make it display what I wanted to display to the audience.
+What type of data are you storing in Mongo?
+I will store two types of data in mongoDB, the first is the user's password and name, and the second is the NPC created by the user.
+How are you making use of Handlebars?
+In the handle bars I created some space for react to create the tables and lists that I needed inside.
+How are you going above and beyond?
+This project was very difficult because it involved too much content. I had a 12-hour time difference between China and the United States, so I couldn't communicate with my teacher in time and had a lot of difficulties that I couldn't solve, so I had to turn to the Internet or check the documentation to solve it. One of the biggest headache for me is how to do a delete function. In the E part I did the random function and did not choose to do the delete function, which led me to spend a lot of time learning how to delete in this project.
+
+The whole semester of study and the final completion of this project has been unimaginably difficult for me. I had to try multiple VPNs because I couldn't access Zoom or Mongodb or other websites directly because of the firewall in China, and I had to wake up at 6:00 pm and work until 10:00 pm on the second day to be able to attend classes in the middle of the night. I would wake up at 6:00 pm and work until 10:00 pm the next day. But more than that, with the help of my teachers and classmates, I was able to finish my assignments for the whole semester and finish my second project, which was not easy to be honest. Many times I had to go through the document again and again to find my mistakes, and every time I couldn't reach you, I had to try to contact another teacher in the class, Austin, or another teacher in the class to answer my questions. Fortunately, I was able to finish the hardest class of the semester with the help of everyone, and I am very grateful to my brother, my teacher, and everyone else who helped me. In the end, I hope to have a very good grade and I hope you have a happy summer.
